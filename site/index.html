@@ -12,15 +12,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Maven Download Plugin - About</title>
+    <title>Maven Download Plugin - Introduction</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
       @import url("./css/site.css");
     </style>
     <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
-          </head>
+          <meta name="author" content="Marc-Andre Houle" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
   <body class="composite">
     <div id="banner">
                     <span id="bannerLeft">
@@ -42,10 +43,9 @@
   
     
             <div class="xleft">
-        Last Published: 2009-05-06
+        Last Published: 2009-05-08
                       </div>
-            <div class="xright">            <a href="http://maven-download-plugin.googlecode.com" class="externalLink">Maven Download Plugin</a>
-            
+            <div class="xright">      
   
 
   
@@ -68,70 +68,42 @@
   
   
     
-                             <h5>Project Documentation</h5>
+                   <h5>Overview</h5>
             <ul>
               
-                
-              
-            
-            
-      
-            
-      
-            
-      
-            
-      
-            
-      
-            
-      
-            
-      
-            
-      
-              
-            <li class="expanded">
-                    <a href="project-info.html">Project Information</a>
-                  <ul>
-                  
     <li class="none">
-              <strong>About</strong>
+              <strong>Introduction</strong>
         </li>
-                  
+              
     <li class="none">
-                    <a href="integration.html">Continuous Integration</a>
+                    <a href="plugin-info.html">Goals</a>
           </li>
-                  
+              
     <li class="none">
-                    <a href="dependencies.html">Dependencies</a>
+                    <a href="usage.html">Usage</a>
           </li>
-                  
+              
     <li class="none">
-                    <a href="issue-tracking.html">Issue Tracking</a>
+                    <a href="faq.html">FAQ</a>
           </li>
-                  
+          </ul>
+              <h5>Examples</h5>
+            <ul>
+              
     <li class="none">
-                    <a href="mail-lists.html">Mailing Lists</a>
+                    <a href="examples/artifact.html">Downloading standalone artifact</a>
           </li>
-                  
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
     <li class="none">
-                    <a href="license.html">Project License</a>
+                    <a href="project-info.html">ProjectInformation</a>
           </li>
-                  
+              
     <li class="none">
-                    <a href="project-summary.html">Project Summary</a>
+                    <a href="project-reports.html">Project Reports</a>
           </li>
-                  
-    <li class="none">
-                    <a href="team-list.html">Project Team</a>
-          </li>
-                  
-    <li class="none">
-                    <a href="source-repository.html">Source Repository</a>
-          </li>
-              </ul>
-        </li>
           </ul>
                                            <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
             <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
@@ -148,13 +120,23 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <div class="section"><h2>About Maven Download Plugin</h2>
-<p>This is a plugin meant to help maven user to download different files on different 
-  	protocol in part of maven build.  For the first implementation, there will only be
-  	 a goal that will help downloading a maven artifact from the command line.
-  	 
-  	 Future version of the plugin could include web download, ftp download, scp
-  	 download and so on.</p>
+        <div class="section"><h2>Maven download plugin</h2>
+<p>This is a plugin meant to help maven user to download different files on different protocol in part of maven build. For the first implementation, there will only be a goal that will help downloading a maven artifact from the command line. Future version of the plugin could include web download, ftp download, scp download and so on.</p>
+<div class="section"><h3>Goals Overview</h3>
+<p>There is future goal planned that are not yet implemented.</p>
+<ul><li><a href="artifact-mojo.html">maven-download-plugin:artifact</a> Give the possibility to download an artifact to a specified directory..</li>
+</ul>
+</div>
+<div class="section"><h3>Usage</h3>
+<p>General instructions on how to use the Plugin Name can be found on the <a href="usage.html">usage page</a>. Some more specific use cases are described in the examples given below. Last but not least, users occasionally contribute additional examples, tips or errata to the <a href="http://code.google.com/p/maven-download-plugin/w/list" class="externalLink">plugin's wiki page</a>.</p>
+<p>In case you still have questions regarding the plugin's usage, please have a look at the <a href="faq.html">FAQ</a> and feel free to contact the <a href="mail-lists.html">user mailing list</a>. The posts to the mailing list are archived and could already contain the answer to your question as part of an older thread. Hence, it is also worth browsing/searching the <a href="mail-lists.html">mail archive</a>.</p>
+<p>If you feel like the plugin is missing a feature or has a defect, you can fill a feature request or bug report in our <a href="issue-tracking.html">issue tracker</a>. When creating a new issue, please provide a comprehensive description of your concern. Especially for fixing bugs it is crucial that the developers can reproduce your problem. For this reason, entire debug logs, POMs or most preferably little demo projects attached to the issue are very much appreciated. Of course, patches are welcome, too. Contributors can check out the project from our <a href="source-repository.html">source repository</a> and will find supplementary information in the <a href="http://maven.apache.org/guides/development/guide-helping.html" class="externalLink">guide to helping with Maven</a>. </p>
+</div>
+<div class="section"><h3>Examples</h3>
+<p>To provide you with better understanding of some usages of the Plugin Name, you can take a look into the following examples:</p>
+<ul><li><a href="examples/artifact.html">Downloading an artifact from repository</a></li>
+</ul>
+</div>
 </div>
 
       </div>
@@ -166,6 +148,7 @@
       <div class="xright">&#169;  
           2009
     
+          Independant
           
   
 

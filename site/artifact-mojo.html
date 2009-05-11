@@ -142,11 +142,55 @@ on a parameter.</div><p><strong>Attributes</strong>:</p>
 <td>The artifact Id of the file to download.<br />
 </td>
 </tr>
-<tr class="a"><td><strong><a href="#outputDirectory">outputDirectory</a></strong></td>
+<tr class="a"><td><strong><a href="#groupId">groupId</a></strong></td>
+<td><code>String</code></td>
+<td><code>-</code></td>
+<td>The group Id of the file to download.<br />
+</td>
+</tr>
+<tr class="b"><td><strong><a href="#outputDirectory">outputDirectory</a></strong></td>
 <td><code>File</code></td>
 <td><code>-</code></td>
 <td>Location of the file.<br />
 </td>
+</tr>
+<tr class="a"><td><strong><a href="#version">version</a></strong></td>
+<td><code>String</code></td>
+<td><code>-</code></td>
+<td>The version of the file to download.<br />
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="Optional_Parameters"></a>Optional Parameters</h3>
+<table class="bodyTable"><tr class="b"><th>Name</th>
+<th>Type</th>
+<th>Since</th>
+<th>Description</th>
+</tr>
+<tr class="a"><td><strong><a href="#classifier">classifier</a></strong></td>
+<td><code>String</code></td>
+<td><code>-</code></td>
+<td>The classifier of artifact to download.<br />
+</td>
+</tr>
+<tr class="b"><td><strong><a href="#localRepository">localRepository</a></strong></td>
+<td><code>ArtifactRepository</code></td>
+<td><code>-</code></td>
+<td>(no description)<br />
+</td>
+</tr>
+<tr class="a"><td><strong><a href="#remoteRepositories">remoteRepositories</a></strong></td>
+<td><code>List</code></td>
+<td><code>-</code></td>
+<td>(no description)<br />
+</td>
+</tr>
+<tr class="b"><td><strong><a href="#type">type</a></strong></td>
+<td><code>String</code></td>
+<td><code>-</code></td>
+<td>The type of artifact to download.<br />
+<strong>Default value is</strong>: <code>jar</code>.</td>
 </tr>
 </table>
 </div>
@@ -154,13 +198,50 @@ on a parameter.</div><p><strong>Attributes</strong>:</p>
 <p><strong><a name="artifactId">artifactId</a>:</strong></p>
 <div>The artifact Id of the file to download.</div><ul><li><strong>Type</strong>: <code>java.lang.String</code></li>
 <li><strong>Required</strong>: <code>Yes</code></li>
-<li><strong>Expression</strong>: <code>${download.artifact.artifactId}</code></li>
+<li><strong>Expression</strong>: <code>${artifactId}</code></li>
+</ul>
+<hr />
+<p><strong><a name="classifier">classifier</a>:</strong></p>
+<div>The classifier of artifact to download.</div><ul><li><strong>Type</strong>: <code>java.lang.String</code></li>
+<li><strong>Required</strong>: <code>No</code></li>
+<li><strong>Expression</strong>: <code>${classifier}</code></li>
+</ul>
+<hr />
+<p><strong><a name="groupId">groupId</a>:</strong></p>
+<div>The group Id of the file to download.</div><ul><li><strong>Type</strong>: <code>java.lang.String</code></li>
+<li><strong>Required</strong>: <code>Yes</code></li>
+<li><strong>Expression</strong>: <code>${groupId}</code></li>
+</ul>
+<hr />
+<p><strong><a name="localRepository">localRepository</a>:</strong></p>
+<div>(no description)</div><ul><li><strong>Type</strong>: <code>org.apache.maven.artifact.repository.ArtifactRepository</code></li>
+<li><strong>Required</strong>: <code>No</code></li>
+<li><strong>Expression</strong>: <code>${localRepository}</code></li>
 </ul>
 <hr />
 <p><strong><a name="outputDirectory">outputDirectory</a>:</strong></p>
 <div>Location of the file.</div><ul><li><strong>Type</strong>: <code>java.io.File</code></li>
 <li><strong>Required</strong>: <code>Yes</code></li>
 <li><strong>Expression</strong>: <code>${project.build.directory}</code></li>
+</ul>
+<hr />
+<p><strong><a name="remoteRepositories">remoteRepositories</a>:</strong></p>
+<div>(no description)</div><ul><li><strong>Type</strong>: <code>java.util.List</code></li>
+<li><strong>Required</strong>: <code>No</code></li>
+<li><strong>Expression</strong>: <code>${project.remoteArtifactRepositories}</code></li>
+</ul>
+<hr />
+<p><strong><a name="type">type</a>:</strong></p>
+<div>The type of artifact to download.</div><ul><li><strong>Type</strong>: <code>java.lang.String</code></li>
+<li><strong>Required</strong>: <code>No</code></li>
+<li><strong>Expression</strong>: <code>${type}</code></li>
+<li><strong>Default</strong>: <code>jar</code></li>
+</ul>
+<hr />
+<p><strong><a name="version">version</a>:</strong></p>
+<div>The version of the file to download.</div><ul><li><strong>Type</strong>: <code>java.lang.String</code></li>
+<li><strong>Required</strong>: <code>Yes</code></li>
+<li><strong>Expression</strong>: <code>${version}</code></li>
 </ul>
 </div>
 </div>

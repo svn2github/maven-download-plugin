@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Maven Download Plugin - Downloading maven artifact</title>
+    <style type="text/css" media="all">
+      @import url("../css/maven-base.css");
+      @import url("../css/maven-theme.css");
+      @import url("../css/site.css");
+    </style>
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+          <meta name="author" content="Marc-Andre Houle" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            Maven Download Plugin
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-05-12
+                      </div>
+            <div class="xright">      
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Overview</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../index.html">Introduction</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../plugin-info.html">Goals</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../usage.html">Usage</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../faq.html">FAQ</a>
+          </li>
+          </ul>
+              <h5>Examples</h5>
+            <ul>
+              
+    <li class="none">
+              <strong>Downloading standalone artifact</strong>
+        </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../project-info.html">ProjectInformation</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../project-reports.html">Project Reports</a>
+          </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="../images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Command line artifact download goal</h2>
+<p>This goal is meant to help the user download an artifact from the repositories directly from the command line without having to pass by the dependency plugin. The dependency plugin is hard to use when wanting to download only one artifact seperatly. Also, this goal can be used without the need to have a pom file in the working directory. When there is no pom files, will simply load information for repository from the settings.xml file.</p>
+<div class="source"><pre>mvn com.googlecode:maven-download-plugin:artifact \
+                        -DgroupId=com.googlecode \
+                        -DartifactId=maven-download-plugin \
+                        -Dversion=0.1 \
+                        -DoutputDirectory=temp</pre>
+</div>
+<p>This command would have downloaded the maven download plugin, create the directory temp if it does not exist and then copy the artifact to this location. The plugin can also search transitively to get all the dependent artifact by using the dependencyDepth option.</p>
+<div class="source"><pre>mvn com.googlecode:maven-download-plugin:artifact \
+                        -DgroupId=com.googlecode \
+                        -DartifactId=maven-download-plugin \
+                        -Dversion=0.1 \
+                        -DoutputDirectory=temp \
+                        -DdependencyDepth=2</pre>
+</div>
+<p>Take a look at the <a href="artifact-mojo.html">artifact goal documentation</a> for all the plugin options.</p>
+</div>
+<div class="section"><h2>Using from POM file</h2>
+<p>This is not suggested since the dependency plugin already exist and do a good job at it. See <a href="http://maven.apache.org/plugins/maven-dependency-plugin/" class="externalLink">dependency plugin</a> for more informations.</p>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2009
+    
+          Independant
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

@@ -12,6 +12,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Maven Download Plugin - download:artifact</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
@@ -19,8 +20,7 @@
       @import url("./css/site.css");
     </style>
     <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-      </head>
+          </head>
   <body class="composite">
     <div id="banner">
                     <span id="bannerLeft">
@@ -121,14 +121,13 @@
       <div id="contentBox">
         <div class="section"><h2><a name="download:artifact"></a>download:artifact</h2>
 <p><strong>Full name</strong>:</p>
-<p>com.googlecode:maven-download-plugin:0.1-SNAPSHOT:artifact</p>
+<p>com.googlecode:maven-download-plugin:0.1:artifact</p>
 <p><strong>Description</strong>:</p>
 <div>This mojo is designed to download a maven artifact from the
 repository and download them in the specified path. The maven
 artifact downloaded can also download it's dependency or not, based
 on a parameter.</div><p><strong>Attributes</strong>:</p>
-<ul><li>Requires a Maven 2.0 project to be executed.</li>
-<li>Binds by default to the lifecycle phase: <code>process-resources</code>.</li>
+<ul><li>Binds by default to the lifecycle phase: <code>process-resources</code>.</li>
 </ul>
 <div class="section"><h3><a name="Required_Parameters"></a>Required Parameters</h3>
 <table class="bodyTable"><tr class="a"><th>Name</th>
@@ -148,13 +147,7 @@ on a parameter.</div><p><strong>Attributes</strong>:</p>
 <td>The group Id of the file to download.<br />
 </td>
 </tr>
-<tr class="b"><td><strong><a href="#outputDirectory">outputDirectory</a></strong></td>
-<td><code>File</code></td>
-<td><code>-</code></td>
-<td>Location of the file.<br />
-</td>
-</tr>
-<tr class="a"><td><strong><a href="#version">version</a></strong></td>
+<tr class="b"><td><strong><a href="#version">version</a></strong></td>
 <td><code>String</code></td>
 <td><code>-</code></td>
 <td>The version of the file to download.<br />
@@ -163,16 +156,23 @@ on a parameter.</div><p><strong>Attributes</strong>:</p>
 </table>
 </div>
 <div class="section"><h3><a name="Optional_Parameters"></a>Optional Parameters</h3>
-<table class="bodyTable"><tr class="b"><th>Name</th>
+<table class="bodyTable"><tr class="a"><th>Name</th>
 <th>Type</th>
 <th>Since</th>
 <th>Description</th>
 </tr>
-<tr class="a"><td><strong><a href="#classifier">classifier</a></strong></td>
+<tr class="b"><td><strong><a href="#classifier">classifier</a></strong></td>
 <td><code>String</code></td>
 <td><code>-</code></td>
 <td>The classifier of artifact to download.<br />
 </td>
+</tr>
+<tr class="a"><td><strong><a href="#dependencyDepth">dependencyDepth</a></strong></td>
+<td><code>long</code></td>
+<td><code>-</code></td>
+<td>The dependency depth to query. Will try to fetch the artifact for
+as much as the number of dependency specified.<br />
+<strong>Default value is</strong>: <code>0</code>.</td>
 </tr>
 <tr class="b"><td><strong><a href="#localRepository">localRepository</a></strong></td>
 <td><code>ArtifactRepository</code></td>
@@ -180,13 +180,19 @@ on a parameter.</div><p><strong>Attributes</strong>:</p>
 <td>(no description)<br />
 </td>
 </tr>
-<tr class="a"><td><strong><a href="#remoteRepositories">remoteRepositories</a></strong></td>
+<tr class="a"><td><strong><a href="#outputDirectory">outputDirectory</a></strong></td>
+<td><code>File</code></td>
+<td><code>-</code></td>
+<td>Location of the file.<br />
+<strong>Default value is</strong>: <code>${project.build.directory}</code>.</td>
+</tr>
+<tr class="b"><td><strong><a href="#remoteRepositories">remoteRepositories</a></strong></td>
 <td><code>List</code></td>
 <td><code>-</code></td>
 <td>(no description)<br />
 </td>
 </tr>
-<tr class="b"><td><strong><a href="#type">type</a></strong></td>
+<tr class="a"><td><strong><a href="#type">type</a></strong></td>
 <td><code>String</code></td>
 <td><code>-</code></td>
 <td>The type of artifact to download.<br />
@@ -207,6 +213,14 @@ on a parameter.</div><p><strong>Attributes</strong>:</p>
 <li><strong>Expression</strong>: <code>${classifier}</code></li>
 </ul>
 <hr />
+<p><strong><a name="dependencyDepth">dependencyDepth</a>:</strong></p>
+<div>The dependency depth to query. Will try to fetch the artifact for
+as much as the number of dependency specified.</div><ul><li><strong>Type</strong>: <code>long</code></li>
+<li><strong>Required</strong>: <code>No</code></li>
+<li><strong>Expression</strong>: <code>${dependencyDepth}</code></li>
+<li><strong>Default</strong>: <code>0</code></li>
+</ul>
+<hr />
 <p><strong><a name="groupId">groupId</a>:</strong></p>
 <div>The group Id of the file to download.</div><ul><li><strong>Type</strong>: <code>java.lang.String</code></li>
 <li><strong>Required</strong>: <code>Yes</code></li>
@@ -221,8 +235,9 @@ on a parameter.</div><p><strong>Attributes</strong>:</p>
 <hr />
 <p><strong><a name="outputDirectory">outputDirectory</a>:</strong></p>
 <div>Location of the file.</div><ul><li><strong>Type</strong>: <code>java.io.File</code></li>
-<li><strong>Required</strong>: <code>Yes</code></li>
-<li><strong>Expression</strong>: <code>${project.build.directory}</code></li>
+<li><strong>Required</strong>: <code>No</code></li>
+<li><strong>Expression</strong>: <code>${outputDirectory}</code></li>
+<li><strong>Default</strong>: <code>${project.build.directory}</code></li>
 </ul>
 <hr />
 <p><strong><a name="remoteRepositories">remoteRepositories</a>:</strong></p>

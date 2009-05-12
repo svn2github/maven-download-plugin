@@ -12,7 +12,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Maven Download Plugin - Project Dependencies</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
@@ -20,7 +19,8 @@
       @import url("./css/site.css");
     </style>
     <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
-          </head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
   <body class="composite">
     <div id="banner">
                     <span id="bannerLeft">
@@ -42,7 +42,7 @@
   
     
             <div class="xleft">
-        Last Published: 2009-05-11
+        Last Published: 2009-05-12
                       </div>
             <div class="xright">      
   
@@ -90,7 +90,7 @@
             <ul>
               
     <li class="none">
-                    <a href="examples/artifact.html">Downloading standalone artifact</a>
+                    <a href="examples/artifact_no_pom.html">Downloading standalone artifact</a>
           </li>
           </ul>
               <h5>Project Documentation</h5>
@@ -119,8 +119,8 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <a name="Project_Dependencies"></a><div class="section"><h2>Project Dependencies</h2>
-<a name="compile"></a><div class="section"><h3>compile</h3>
+        <div class="section"><h2>Project Dependencies</h2>
+<div class="section"><h3>compile</h3>
 <p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
 <table class="bodyTable"><tr class="a"><th>GroupId</th>
 <th>ArtifactId</th>
@@ -128,28 +128,28 @@
 <th>Type</th>
 </tr>
 <tr class="b"><td>commons-io</td>
-<td><a class="externalLink" href="http://commons.apache.org/io/">commons-io</a></td>
+<td><a href="http://commons.apache.org/io/" class="externalLink">commons-io</a></td>
 <td>1.4</td>
 <td>jar</td>
 </tr>
 <tr class="a"><td>org.apache.maven</td>
-<td><a class="externalLink" href="http://maven.apache.org/maven2/maven-artifact">maven-artifact</a></td>
+<td><a href="http://maven.apache.org/maven2/maven-artifact" class="externalLink">maven-artifact</a></td>
 <td>2.0</td>
 <td>jar</td>
 </tr>
 <tr class="b"><td>org.apache.maven</td>
-<td><a class="externalLink" href="http://maven.apache.org/maven2/maven-plugin-api">maven-plugin-api</a></td>
+<td><a href="http://maven.apache.org/maven2/maven-plugin-api" class="externalLink">maven-plugin-api</a></td>
 <td>2.0</td>
 <td>jar</td>
 </tr>
 <tr class="a"><td>org.apache.maven</td>
-<td><a class="externalLink" href="http://maven.apache.org/maven2/maven-project">maven-project</a></td>
+<td><a href="http://maven.apache.org/maven2/maven-project" class="externalLink">maven-project</a></td>
 <td>2.0</td>
 <td>jar</td>
 </tr>
 </table>
 </div>
-<a name="test"></a><div class="section"><h3>test</h3>
+<div class="section"><h3>test</h3>
 <p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
 <table class="bodyTable"><tr class="b"><th>GroupId</th>
 <th>ArtifactId</th>
@@ -157,16 +157,16 @@
 <th>Type</th>
 </tr>
 <tr class="a"><td>junit</td>
-<td><a class="externalLink" href="http://junit.org">junit</a></td>
+<td><a href="http://junit.org" class="externalLink">junit</a></td>
 <td>3.8.1</td>
 <td>jar</td>
 </tr>
 </table>
 </div>
 </div>
-<a name="Project_Transitive_Dependencies"></a><div class="section"><h2>Project Transitive Dependencies</h2>
+<div class="section"><h2>Project Transitive Dependencies</h2>
 <p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
-<a name="compile"></a><div class="section"><h3>compile</h3>
+<div class="section"><h3>compile</h3>
 <p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
 <table class="bodyTable"><tr class="b"><th>GroupId</th>
 <th>ArtifactId</th>
@@ -174,27 +174,27 @@
 <th>Type</th>
 </tr>
 <tr class="a"><td>classworlds</td>
-<td><a class="externalLink" href="http://classworlds.codehaus.org/">classworlds</a></td>
+<td><a href="http://classworlds.codehaus.org/" class="externalLink">classworlds</a></td>
 <td>1.1-alpha-2</td>
 <td>jar</td>
 </tr>
 <tr class="b"><td>org.apache.maven</td>
-<td><a class="externalLink" href="http://maven.apache.org">maven-artifact-manager</a></td>
+<td><a href="http://maven.apache.org" class="externalLink">maven-artifact-manager</a></td>
 <td>2.0</td>
 <td>jar</td>
 </tr>
 <tr class="a"><td>org.apache.maven</td>
-<td><a class="externalLink" href="http://maven.apache.org/maven2/maven-model">maven-model</a></td>
+<td><a href="http://maven.apache.org/maven2/maven-model" class="externalLink">maven-model</a></td>
 <td>2.0</td>
 <td>jar</td>
 </tr>
 <tr class="b"><td>org.apache.maven</td>
-<td><a class="externalLink" href="http://maven.apache.org/maven2/maven-profile">maven-profile</a></td>
+<td><a href="http://maven.apache.org/maven2/maven-profile" class="externalLink">maven-profile</a></td>
 <td>2.0</td>
 <td>jar</td>
 </tr>
 <tr class="a"><td>org.apache.maven</td>
-<td><a class="externalLink" href="http://maven.apache.org/maven2/maven-repository-metadata">maven-repository-metadata</a></td>
+<td><a href="http://maven.apache.org/maven2/maven-repository-metadata" class="externalLink">maven-repository-metadata</a></td>
 <td>2.0</td>
 <td>jar</td>
 </tr>
@@ -216,7 +216,7 @@
 </table>
 </div>
 </div>
-<a name="Project_Dependency_Graph"></a><div class="section"><h2>Project Dependency Graph</h2>
+<div class="section"><h2>Project Dependency Graph</h2>
 <script language="javascript" type="text/javascript">
       function toggleDependencyDetail( divId, imgId )
       {
@@ -234,8 +234,8 @@
         }
       }
 </script>
-<a name="Dependency_Tree"></a><div class="section"><h3>Dependency Tree</h3>
-<ul><li>com.googlecode:maven-download-plugin:maven-plugin:0.1 <img id="_1514586822" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2032710139', '_1514586822' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2032710139" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Download Plugin</th>
+<div class="section"><h3>Dependency Tree</h3>
+<ul><li>com.googlecode:maven-download-plugin:maven-plugin:0.2-SNAPSHOT <img id="_584740189" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1202864599', '_584740189' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1202864599" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Download Plugin</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>This is a plugin meant to help maven user to download
 		different files on different protocol in part of maven build. For the
@@ -243,29 +243,29 @@
 		downloading a maven artifact from the command line. Future version of
 		the plugin could include web download, ftp download, scp download and
 		so on.</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven-download-plugin.googlecode.com">http://maven-download-plugin.googlecode.com</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></p>
+<p><b>URL: </b><a href="http://maven-download-plugin.googlecode.com" class="externalLink">http://maven-download-plugin.googlecode.com</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0" class="externalLink">Apache License 2.0</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.apache.maven:maven-plugin-api:jar:2.0 (compile) <img id="_663980745" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_514167395', '_663980745' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_514167395" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Plugin API</th>
+</div><ul><li>org.apache.maven:maven-plugin-api:jar:2.0 (compile) <img id="_877697621" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_534343862', '_877697621' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_534343862" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Plugin API</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Maven is a project development management and comprehension tool. Based on the concept of a project object model: builds, dependency management, documentation creation, site publication, and distribution publication are all controlled from the declarative file. Maven can be extended by plugins to utilise a number of other development tools for reporting or the build process.</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org/maven2/maven-plugin-api">http://maven.apache.org/maven2/maven-plugin-api</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-plugin-api" class="externalLink">http://maven.apache.org/maven2/maven-plugin-api</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>org.apache.maven:maven-artifact:jar:2.0 (compile) <img id="_343345636" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1511735699', '_343345636' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1511735699" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Artifact</th>
+<li>org.apache.maven:maven-artifact:jar:2.0 (compile) <img id="_263607784" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1889582236', '_263607784' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1889582236" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Artifact</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Maven is a project development management and comprehension tool. Based on the concept of a project object model: builds, dependency management, documentation creation, site publication, and distribution publication are all controlled from the declarative file. Maven can be extended by plugins to utilise a number of other development tools for reporting or the build process.</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org/maven2/maven-artifact">http://maven.apache.org/maven2/maven-artifact</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-artifact" class="externalLink">http://maven.apache.org/maven2/maven-artifact</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_244318196" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_646626211', '_244318196' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_646626211" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
+</div><ul><li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_1127225649" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1494736517', '_1127225649' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1494736517" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
@@ -275,52 +275,43 @@
 </div></li>
 </ul>
 </li>
-<li>org.apache.maven:maven-project:jar:2.0 (compile) <img id="_477501603" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1401911179', '_477501603' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1401911179" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Project Builder</th>
+<li>org.apache.maven:maven-project:jar:2.0 (compile) <img id="_1000614599" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1168561083', '_1000614599' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1168561083" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Project Builder</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>This library is used to not only read Maven project object model files, but to assemble inheritence
     and to retrieve remote models as required.</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org/maven2/maven-project">http://maven.apache.org/maven2/maven-project</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-project" class="externalLink">http://maven.apache.org/maven2/maven-project</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.apache.maven:maven-profile:jar:2.0 (compile) <img id="_217302894" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1125318021', '_217302894' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1125318021" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Profile Model</th>
+</div><ul><li>org.apache.maven:maven-profile:jar:2.0 (compile) <img id="_1108562036" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_645428133', '_1108562036' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_645428133" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Profile Model</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Maven is a project development management and comprehension tool. Based on the concept of a project object model: builds, dependency management, documentation creation, site publication, and distribution publication are all controlled from the declarative file. Maven can be extended by plugins to utilise a number of other development tools for reporting or the build process.</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org/maven2/maven-profile">http://maven.apache.org/maven2/maven-profile</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-profile" class="externalLink">http://maven.apache.org/maven2/maven-profile</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.apache.maven:maven-model:jar:2.0 (compile) <img id="_1899504720" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_874529593', '_1899504720' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_874529593" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Model</th>
+</div><ul><li>org.apache.maven:maven-model:jar:2.0 (compile) <img id="_1442329759" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1598662994', '_1442329759' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1598662994" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Model</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Maven Model</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org/maven2/maven-model">http://maven.apache.org/maven2/maven-model</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-model" class="externalLink">http://maven.apache.org/maven2/maven-model</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8 (compile) <img id="_1585901952" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1832294249', '_1585901952' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1832294249" style="display:none"><table class="bodyTable"><tr class="a"><th>Default Plexus Container</th>
+<li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_680662683" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_278415898', '_680662683' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_278415898" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
-</div><ul><li>junit:junit:jar:3.8.1 (compile) <img id="_1499141165" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1813912438', '_1499141165' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1813912438" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
-</tr>
-<tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
-<p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></p>
-</td>
-</tr>
-</table>
 </div></li>
-<li>classworlds:classworlds:jar:1.1-alpha-2 (compile) <img id="_1881238413" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_514364998', '_1881238413' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_514364998" style="display:none"><table class="bodyTable"><tr class="a"><th>classworlds</th>
+<li>org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8 (compile) <img id="_331939625" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_122424814', '_331939625' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_122424814" style="display:none"><table class="bodyTable"><tr class="a"><th>Default Plexus Container</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>URL: </b><a class="externalLink" href="http://classworlds.codehaus.org/">http://classworlds.codehaus.org/</a></p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
@@ -328,64 +319,139 @@
 </div></li>
 </ul>
 </li>
-</ul>
-</li>
-<li>org.apache.maven:maven-model:jar:2.0 (compile) <img id="_124775785" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_754107684', '_124775785' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_754107684" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Model</th>
+<li>org.apache.maven:maven-model:jar:2.0 (compile) <img id="_8342900" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_480046799', '_8342900' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_480046799" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Model</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Maven Model</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org/maven2/maven-model">http://maven.apache.org/maven2/maven-model</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-model" class="externalLink">http://maven.apache.org/maven2/maven-model</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_1644437014" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1102023526', '_1644437014' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1102023526" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>org.apache.maven:maven-artifact-manager:jar:2.0 (compile) <img id="_1994545790" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1640023670', '_1994545790' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1640023670" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Artifact Manager</th>
+</ul>
+</li>
+<li>org.apache.maven:maven-artifact-manager:jar:2.0 (compile) <img id="_1019501770" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_441633035', '_1019501770' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_441633035" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Artifact Manager</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Maven is a project development management and comprehension tool. Based on the concept of a project object model: builds, dependency management, documentation creation, site publication, and distribution publication are all controlled from the declarative file. Maven can be extended by plugins to utilise a number of other development tools for reporting or the build process.</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org">http://maven.apache.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org" class="externalLink">http://maven.apache.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.apache.maven:maven-repository-metadata:jar:2.0 (compile) <img id="_1563348309" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_374856942', '_1563348309' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_374856942" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Repository Metadata Model</th>
+</div><ul><li>org.apache.maven:maven-repository-metadata:jar:2.0 (compile) <img id="_1421609439" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_989013499', '_1421609439' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_989013499" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Repository Metadata Model</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Maven Plugin Mapping</p>
-<p><b>URL: </b><a class="externalLink" href="http://maven.apache.org/maven2/maven-repository-metadata">http://maven.apache.org/maven2/maven-repository-metadata</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-repository-metadata" class="externalLink">http://maven.apache.org/maven2/maven-repository-metadata</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_2137588012" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1368867604', '_2137588012' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1368867604" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5 (compile) <img id="_449781834" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_930686711', '_449781834' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_930686711" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Wagon API</th>
+</ul>
+</li>
+<li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_218884623" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1076091002', '_218884623' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1076091002" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.apache.maven:maven-artifact:jar:2.0 (compile) <img id="_1817590554" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_173745000', '_1817590554' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_173745000" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Artifact</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Maven is a project development management and comprehension tool. Based on the concept of a project object model: builds, dependency management, documentation creation, site publication, and distribution publication are all controlled from the declarative file. Maven can be extended by plugins to utilise a number of other development tools for reporting or the build process.</p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-artifact" class="externalLink">http://maven.apache.org/maven2/maven-artifact</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8 (compile) <img id="_404866468" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1623786082', '_404866468' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1623786082" style="display:none"><table class="bodyTable"><tr class="a"><th>Default Plexus Container</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5 (compile) <img id="_1359627427" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1503968219', '_1359627427' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1503968219" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Wagon API</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Tools to manage artifacts and deployment</p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
-</div></li>
-</ul>
-</li>
-<li>org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8 (compile) <img id="_1538974889" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_152894685', '_1538974889' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_152894685" style="display:none"><table class="bodyTable"><tr class="a"><th>Default Plexus Container</th>
+</div><ul><li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_640148510" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_270939923', '_640148510' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_270939923" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
-</div><ul><li>junit:junit:jar:3.8.1 (compile) <img id="_980625112" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_283742993', '_980625112' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_283742993" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_514495724" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1123804346', '_514495724' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1123804346" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.apache.maven:maven-artifact:jar:2.0 (compile) <img id="_1957045664" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1331467042', '_1957045664' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1331467042" style="display:none"><table class="bodyTable"><tr class="a"><th>Maven Artifact</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Maven is a project development management and comprehension tool. Based on the concept of a project object model: builds, dependency management, documentation creation, site publication, and distribution publication are all controlled from the declarative file. Maven can be extended by plugins to utilise a number of other development tools for reporting or the build process.</p>
+<p><b>URL: </b><a href="http://maven.apache.org/maven2/maven-artifact" class="externalLink">http://maven.apache.org/maven2/maven-artifact</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8 (compile) <img id="_794238508" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1437195398', '_794238508' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1437195398" style="display:none"><table class="bodyTable"><tr class="a"><th>Default Plexus Container</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.codehaus.plexus:plexus-utils:jar:1.0.4 (compile) <img id="_15429735" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1807759490', '_15429735' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1807759490" style="display:none"><table class="bodyTable"><tr class="a"><th>Plexus Common Utilities</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>junit:junit:jar:3.8.1 (compile) <img id="_1902116881" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1821902511', '_1902116881' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1821902511" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
-<p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>classworlds:classworlds:jar:1.1-alpha-2 (compile) <img id="_2133991866" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_355241690', '_2133991866' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_355241690" style="display:none"><table class="bodyTable"><tr class="a"><th>classworlds</th>
+<li>classworlds:classworlds:jar:1.1-alpha-2 (compile) <img id="_813572209" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1437013922', '_813572209' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1437013922" style="display:none"><table class="bodyTable"><tr class="a"><th>classworlds</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>URL: </b><a class="externalLink" href="http://classworlds.codehaus.org/">http://classworlds.codehaus.org/</a></p>
+<p><b>URL: </b><a href="http://classworlds.codehaus.org/" class="externalLink">http://classworlds.codehaus.org/</a></p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
@@ -395,20 +461,20 @@
 </li>
 </ul>
 </li>
-<li>commons-io:commons-io:jar:1.4 (compile) <img id="_745276099" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1740675369', '_745276099' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1740675369" style="display:none"><table class="bodyTable"><tr class="a"><th>Commons IO</th>
+<li>commons-io:commons-io:jar:1.4 (compile) <img id="_2131340592" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_639688624', '_2131340592' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_639688624" style="display:none"><table class="bodyTable"><tr class="a"><th>Commons IO</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>Commons-IO contains utility classes, stream implementations, file filters, file comparators and endian classes.</p>
-<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/io/">http://commons.apache.org/io/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p>
+<p><b>URL: </b><a href="http://commons.apache.org/io/" class="externalLink">http://commons.apache.org/io/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>junit:junit:jar:3.8.1 (test) <img id="_1475467212" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1833740924', '_1475467212' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1833740924" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
+<li>junit:junit:jar:3.8.1 (test) <img id="_1660520336" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_953713749', '_1660520336' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_953713749" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
 </tr>
 <tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
-<p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
 </td>
 </tr>
 </table>
@@ -418,13 +484,13 @@
 </ul>
 </div>
 </div>
-<a name="Licenses"></a><div class="section"><h2>Licenses</h2>
+<div class="section"><h2>Licenses</h2>
 <p><b>Unknown: </b>Default Plexus Container, Plexus Common Utilities, classworlds</p>
 <p><b>The Apache Software License, Version 2.0: </b>Commons IO, Maven Artifact, Maven Artifact Manager, Maven Model, Maven Plugin API, Maven Profile Model, Maven Project Builder, Maven Repository Metadata Model, Maven Wagon API</p>
 <p><b>Common Public License Version 1.0: </b>JUnit</p>
 <p><b>Apache License 2.0: </b>Maven Download Plugin</p>
 </div>
-<a name="Dependency_File_Details"></a><div class="section"><h2>Dependency File Details</h2>
+<div class="section"><h2>Dependency File Details</h2>
 <table class="bodyTable"><tbody><tr class="a"><th align="left">Filename</th>
 <th align="right">Size</th>
 <th align="right">Entries</th>
@@ -553,37 +619,45 @@
 <td align="center">1.3</td>
 <td align="right">13</td>
 </tr>
-<tr class="a"><td align="right">compile: 13</td>
-<td align="right">compile: 1.00 MB</td>
-<td align="right">compile: 949</td>
-<td align="right">compile: 702</td>
-<td align="right">compile: 98</td>
+<tr class="a"><td align="right">compile: 12</td>
+<td align="right">compile: 909.21 kB</td>
+<td align="right">compile: 830</td>
+<td align="right">compile: 602</td>
+<td align="right">compile: 92</td>
 <td align="center">-</td>
-<td align="right">compile: 13</td>
+<td align="right">compile: 12</td>
+</tr>
+<tr class="b"><td align="right">test: 1</td>
+<td align="right">test: 118.23 kB</td>
+<td align="right">test: 119</td>
+<td align="right">test: 100</td>
+<td align="right">test: 6</td>
+<td align="center">-</td>
+<td align="right">test: 1</td>
 </tr>
 </tbody>
 </table>
 </div>
-<a name="Dependency_Repository_Locations"></a><div class="section"><h2>Dependency Repository Locations</h2>
-<table class="bodyTable"><tbody><tr class="b"><th align="left">Repo ID</th>
+<div class="section"><h2>Dependency Repository Locations</h2>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Repo ID</th>
 <th align="left">URL</th>
 <th align="center">Release</th>
 <th align="center">Snapshot</th>
 <th align="center">Blacklisted</th>
 </tr>
-<tr class="a"><td align="left">central</td>
-<td align="left"><a class="externalLink" href="http://repo1.maven.org/maven2">http://repo1.maven.org/maven2</a></td>
+<tr class="b"><td align="left">central</td>
+<td align="left"><a href="http://repo1.maven.org/maven2" class="externalLink">http://repo1.maven.org/maven2</a></td>
 <td align="center">Yes</td>
 <td align="center">-</td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">apache.snapshots</td>
-<td align="left"><a class="externalLink" href="http://people.apache.org/repo/m2-snapshot-repository">http://people.apache.org/repo/m2-snapshot-repository</a></td>
+<tr class="a"><td align="left">apache.snapshots</td>
+<td align="left"><a href="http://people.apache.org/repo/m2-snapshot-repository" class="externalLink">http://people.apache.org/repo/m2-snapshot-repository</a></td>
 <td align="center">-</td>
 <td align="center">Yes</td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">snapshots</td>
+<tr class="b"><td align="left">snapshots</td>
 <td align="left">http://snapshots.maven.codehaus.org/maven2</td>
 <td align="center">-</td>
 <td align="center">Yes</td>
@@ -592,67 +666,67 @@
 </tbody>
 </table>
 <p>Repository locations for each of the Dependencies.</p>
-<table class="bodyTable"><tbody><tr class="b"><th align="left">Artifact</th>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Artifact</th>
 <th align="center">central</th>
 <th align="center">apache.snapshots</th>
 </tr>
-<tr class="a"><td align="left">classworlds:classworlds:jar:1.1-alpha-2</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">classworlds:classworlds:jar:1.1-alpha-2</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">commons-io:commons-io:jar:1.4</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="a"><td align="left">commons-io:commons-io:jar:1.4</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">junit:junit:jar:3.8.1</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">junit:junit:jar:3.8.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">org.apache.maven:maven-artifact:jar:2.0</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="a"><td align="left">org.apache.maven:maven-artifact:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">org.apache.maven:maven-artifact-manager:jar:2.0</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">org.apache.maven:maven-artifact-manager:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">org.apache.maven:maven-model:jar:2.0</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="a"><td align="left">org.apache.maven:maven-model:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">org.apache.maven:maven-plugin-api:jar:2.0</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">org.apache.maven:maven-plugin-api:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">org.apache.maven:maven-profile:jar:2.0</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="a"><td align="left">org.apache.maven:maven-profile:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">org.apache.maven:maven-project:jar:2.0</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">org.apache.maven:maven-project:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">org.apache.maven:maven-repository-metadata:jar:2.0</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="a"><td align="left">org.apache.maven:maven-repository-metadata:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="a"><td align="left">org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">org.codehaus.plexus:plexus-utils:jar:1.0.4</td>
-<td align="center"><a class="externalLink" href="http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">org.codehaus.plexus:plexus-utils:jar:1.0.4</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><th align="left">Total</th>
+<tr class="a"><th align="left">Total</th>
 <th align="center">central</th>
 <th align="center">apache.snapshots</th>
 </tr>
-<tr class="a"><td align="left">13 (compile: 13)</td>
+<tr class="b"><td align="left">13 (compile: 12, test: 1)</td>
 <td align="center">13</td>
 <td align="center">0</td>
 </tr>

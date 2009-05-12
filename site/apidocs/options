@@ -1,18 +1,23 @@
--classpath '/Users/travail/Documents/workspace/temp/maven-download-plugin/target/checkout/maven-download-plugin/target/classes:/Users/travail/.m2/repository/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar:/Users/travail/.m2/repository/org/apache/maven/maven-project/2.0/maven-project-2.0.jar:/Users/travail/.m2/repository/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar:/Users/travail/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar:/Users/travail/.m2/repository/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar:/Users/travail/.m2/repository/org/apache/maven/maven-model/2.0/maven-model-2.0.jar:/Users/travail/.m2/repository/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar:/Users/travail/.m2/repository/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar:/Users/travail/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/Users/travail/.m2/repository/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar:/Users/travail/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.jar:/Users/travail/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar'
- -protected
+-classpath
+'z:/maven-download-plugin/target/classes;Z:/maven_home/repository/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar;Z:/maven_home/repository/org/apache/maven/maven-project/2.0/maven-project-2.0.jar;Z:/maven_home/repository/commons-io/commons-io/1.4/commons-io-1.4.jar;Z:/maven_home/repository/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar;Z:/maven_home/repository/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar;Z:/maven_home/repository/org/apache/maven/maven-model/2.0/maven-model-2.0.jar;Z:/maven_home/repository/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar;Z:/maven_home/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar;Z:/maven_home/repository/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar;Z:/maven_home/repository/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar;Z:/maven_home/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.jar;Z:/maven_home/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar'
+-encoding
+'Cp1252'
+-protected
 -quiet
 -sourcepath
-'/Users/travail/Documents/workspace/temp/maven-download-plugin/target/checkout/maven-download-plugin/src/main/java'
+'z:/maven-download-plugin/src/main/java'
 -author
 -bottom
-'Copyright © 2009 <a href="http://maven-download-plugin.googlecode.com">Independant</a>. All Rights Reserved.'
+'Copyright &#169; 2009 <a href="http://maven-download-plugin.googlecode.com">Independant</a>. All Rights Reserved.'
 -charset
-'ISO-8859-1'
+'UTF-8'
 -d
-'/Users/travail/Documents/workspace/temp/maven-download-plugin/target/checkout/maven-download-plugin/target/site/apidocs'
+'z:/maven-download-plugin/target/site/apidocs'
+-docencoding
+'UTF-8'
 -doctitle
-'Maven Download Plugin 0.1 API'
+'Maven Download Plugin 0.2-SNAPSHOT API'
 -use
 -version
 -windowtitle
-'Maven Download Plugin 0.1 API'
+'Maven Download Plugin 0.2-SNAPSHOT API'

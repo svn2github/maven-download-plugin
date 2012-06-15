@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.3" timestamp="2012-06-15T16:17:42.213">
+<file name="/home/mistria/workspaceJBossTools/maven-download-plugin/src/main/java/com/googlecode/WGet.java">
+<violation beginline="37" endline="37" begincolumn="1" endcolumn="44" rule="UnusedImports" ruleset="Import Statement Rules" package="com.googlecode" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'org.omg.PortableInterceptor.INACTIVE'
+</violation>
+</file>
+</pmd>
